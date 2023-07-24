@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form action="" name="nhap">
+		<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td>Tháng</td>
+      <td><input type="text" name="Thang" id=""></td>
+		<td>Năm </td>	
+		<td><input type="text" name="Nam" id=""></td>
+    </tr>
+    <tr>
+      <td>Số Ngày</td>
+      <td><input type="text" name="SoNgay" id=""></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="" id="" value="Hiển thị số ngày của tháng" onClick="HienThi();"></td>
+    </tr>
+  </tbody>
+</table>
+
+	</form>
+	<script>
+		function HienThi(){
+			var m=document.nhap.Thang.value;
+			var y=document.nhap.Nam.value;
+			if(m==1|| m==3|| m==5|| m==7|| m==8|| m==10|| m==12) document.nhap.SoNgay.value=30;
+			else if(m==2 && y%4==0) document.nhap.SoNgay.value=29;
+			else if (m==2 && y%4!=0) document.nhap.SoNgay.value=28;
+			else  document.nhap.SoNgay.value=31;
+		}
+	</script>
+</body>
+</html>

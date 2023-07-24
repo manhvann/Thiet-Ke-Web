@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.table{
+			border: 1px solid #000000;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="" name="nhap">
+<table width="200" border="1" class="table">
+  <tbody>
+    <tr>
+      <td>Họ và tên</td>
+      <td><input type="text" name="HoTen" id="" pattern="[0-9]{3}" ></td>
+    </tr>
+    <tr>
+      <td>Họ</td>
+      <td><input type="text" name="Ho" id=""></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="" id="" onClick="HienThi();" value="Hiển Thị"></td>
+      <td><input type="reset" name="" id="" value="Hủy bỏ"></td>
+    </tr>
+  </tbody>
+</table>
+
+	</form>
+	<script>
+		function HienThi(){
+			var s=document.nhap.HoTen.value;
+			var a=new Array();
+			a=s.split(',');
+			var tong=0;
+			for(var i=0;i<a.length;i++){
+				if(a[i]%2==0) tong+=parseInt(a[i]);
+			}
+			document.nhap.Ho.value=tong;
+			
+			
+			
+			//Nhập định dạng sđt
+//			var s=document.nhap.HoTen.value;
+//			var a=new Array();
+//			s=s.trim();
+//			var reg=/^[0-9]{10}$/;
+//			//Chuỗi bắt đầu bằng 10 kí tự số và kết thúc là 10 kí tự số nên chuỗi đúng là chuỗi có 10 kí tự số
+//			if(s.search(reg)!=-1 ) document.nhap.Ho.value="True";
+//			else if(s!="") alert("vui lòng nhập đúng định dạng");
+//			else alert("Vui lòng nhập thông tin");
+			
+			
+			
+			//a=s.split(/\s+/);
+//			var reg=/n\b/;
+			
+//			if(reg.test(s)){
+//				a=s.split(/\s+/);
+//				document.nhap.Ho.value=a[1];
+//			} 
+//			else document.nhap.Ho.value="false";
+			
+//			var vt=-1;
+//			for(var i=0;i<s.length;i++){
+//				if(s.charAt(i)==' ') vt=i;
+//			}
+//			var ho="";
+//			for(var i=0;i<s.length;i++){
+//				if(s.charAt(i)==' ') break;
+//				else ho+=s.charAt(i);
+//			}
+//			document.nhap.Ho.value=ho;
+//			var st="";
+//			for(var i=vt+1;i<s.length;i++){
+//				st+=s.charAt(i);
+//			}
+//			alert("Tên là: "+st);
+		}
+	</script>
+</body>
+</html>

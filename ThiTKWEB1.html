@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			padding: 0;	
+		}
+		.header{
+			height: 60px;
+			background-color: #0099ff;
+			display: flex;
+			justify-content: space-between;
+		}
+		.header-img{
+			height: 100%;
+		}
+		.header-search{
+			line-height: 60px;
+			width: auto;
+		}
+		.header-select-1{
+			color: white;
+		}
+		.header-select-1:hover{
+			color: #FF3300;
+		}
+		.header-select-1 option{
+			line-height: 60px;
+		}
+		.header-select-2{
+			height: 40px;
+		}
+		.header-input{
+			height: 40px;
+			margin-right: 6px;
+		}
+		.menu-list{
+			display: flex;
+			margin: 0;
+			padding: 0 60% 0 0;
+			background-color: #0099ff;
+			list-style: none;
+			height: 38px;
+			justify-content: space-between;
+		}
+		
+		.menu-item{
+			background-color: red;
+			width: 16.6666% ;
+			text-align: center;
+			position: relative;
+		}
+		.menu-item:hover .menu-link{
+			color: #ffff33;
+		}
+		.menu-link{
+			
+			text-decoration: none;
+			color: white;
+			line-height: 38px;
+		}
+		.menu-item:hover .menu-list-2{
+			display: block;
+		}
+		.menu-list-2{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			list-style: none;
+			position: absolute;
+			left: 0;
+			display: none;
+		}
+		.menu-item-2{
+			height: 38px;
+			line-height: 38px;
+			background-color: white;
+			text-align: left;
+		}
+		.menu-link-2{
+			color: black;
+			text-decoration: none;
+			margin-left: 6px;
+		}
+		.content-title{
+			background-color: #0099ff;
+			color: white;
+			height: 26px;
+			line-height: 26px;
+		}
+		.content-product{
+			margin-top: 6px;
+			width: 23%;
+			box-shadow: 0px 1px 1px #ccc;
+		}
+		.content-img{
+			width: 98%;
+		}
+		.content-info{
+			text-align: center;
+		}
+		.content-info:hover{
+			color: #009933;
+			cursor: pointer;
+		}
+		.content-call{
+			text-align: center;
+			color: red;
+		}
+		.product-list{
+			margin-top: 4px;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 8px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<img src="./logo-ThiTKBEB1.png" alt="" class="header-img">
+		<div class="header-search">
+			<div class="header-select-1">
+					Business Areas
+			</div>
+		</div>
+		<div class="header-search">
+			<select name="" id="" class="header-select-2">
+				<option value="">Việt Nam</option>
+			</select>
+		</div>
+		<div class="header-search">
+			<input type="text" name="" id="" class="header-input" placeholder="Tìm kiếm">
+		</div>
+	</div>
+	
+	
+	<div class="menu">
+		<ul class="menu-list">
+			<li class="menu-item"><a href="" class="menu-link">SƠN DULUX</a></li>
+			<li class="menu-item"><a href="" class="menu-link">GIỚI THIỆU</a></li>
+			<li class="menu-item">
+				
+				<a href="" class="menu-link">SẢN PHẨM</a>
+				<ul class="menu-list-2">
+					<li class="menu-item-2"><a href="" class="menu-link-2">Sơn DuLux</a></li>
+					<li class="menu-item-2"><a href="" class="menu-link-2">Sơn Maxilite</a></li>
+					<li class="menu-item-2"><a href="" class="menu-link-2">Sơn Juton</a></li>
+				</ul>
+			</li>
+			<li class="menu-item"><a href="" class="menu-link">SƠN EPOXY</a></li>
+			<li class="menu-item"><a href="" class="menu-link">TIN TỨC</a></li>
+			<li class="menu-item"><a href="" class="menu-link">LIÊN HỆ</a></li>
+		</ul>	
+	</div>
+	
+	<div class="content">
+	
+		<div class="content-title">CHỐNG THẤM</div>
+		<div class="product-list">
+			<div class="content-product">
+			<img src="./sơn-dulux.jpg" alt="" class="content-img">
+			<div class="content-info">
+				SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+			</div>
+			<div class="content-call">
+				Vui lòng gọi
+			</div>
+			</div>
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+			
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+		</div>
+		
+		<div class="product-list">
+			<div class="content-product">
+			<img src="./sơn-dulux.jpg" alt="" class="content-img">
+			<div class="content-info">
+				SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+			</div>
+			<div class="content-call">
+				Vui lòng gọi
+			</div>
+			</div>
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+			
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+			<div class="content-product">
+				<img src="./sơn-dulux.jpg" alt="" class="content-img">
+				<div class="content-info">
+					SƠN DULUX CHỐNG THẤM CÔNG NGHỆ MỚI NHẤT 2022
+				</div>
+				<div class="content-call">
+					Vui lòng gọi
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</body>
+</html>

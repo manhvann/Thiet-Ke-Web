@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Thiết kế Web thường xuyên 1</title>
+	<link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/css/all.min.css">
+	<style>
+		.*{
+			box-sizing: inherit;
+		}
+		html{
+/*			font-size: 62.5%;*/
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+		}
+		.header{
+			height: 54px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+			padding: 0 16px 0 0;
+			background-color: red;
+/*
+			position: absolute;
+			top: 0;
+    		right: 0;
+    		left: 0;
+*/
+/*			background-color: white;*/
+		}
+		.logo-img{
+			height: 58px;
+		}
+		.home-icon{
+			color: white;
+			position: relative;
+			
+		}
+		.search{
+			border: 1px solid #CACACA;
+			height: 20px;
+		}
+		.search-input{
+			border: none;
+			border-right: 1px solid #939393;
+			outline: none;
+		}
+		.search-categories{
+			border: none;
+		}
+		.search-lock p{
+			background-color: #FF3399;
+			padding: 6px 6px 6px 31px;
+			color: white;
+		}
+		.fa-lock{
+			position: absolute;
+			top: 18px;
+    		left: 90%;
+			color: white;
+		}
+		.menu{
+    		height: 50px;
+			position: absolute;
+/*
+			
+			right: 0;
+			left: 0;
+*/
+			top: 54px;
+			background-color: black;
+		}
+		.menu-list{
+			display: flex;
+			margin: 0;
+			list-style: none;
+			padding: 0;
+			height: 100%;
+		}
+		.menu-item{
+			padding: 0 45px;
+			position: relative;
+		}
+		.farr{
+			padding-right: 46px;
+		}
+		.menu-item:hover{
+			background-color: #FF3399;
+		}
+		.menu-item-link{
+			color: white;
+			text-decoration: none;
+			line-height: 50px;
+		}
+		.menu-list-2{
+			position: absolute;
+			top: 110%;
+    		left: 0px;
+			list-style: none;
+			display: none;
+			background-color: white;
+			padding: 8px 8px;
+			width: 100%;
+		}
+		.menu-list-2::before{
+			content: "";
+			height: 20px;
+			position: absolute;
+			top: -14px;
+    		left: 36px;
+			width: 100%;
+		}
+		.menu-item-2{
+			
+		}
+		.menu-item-link-2{
+			color: black;
+		}
+		.menu-item.child:hover .menu-list-2{
+			display: block;
+		}
+		.content{
+			margin-top: 150px;
+			display: flex;
+			justify-content: space-around;
+		}
+		.content-item{
+			box-shadow: 0 1px 1px #ccc;
+		}
+		.content-img{
+			margin: 0;
+			transition: scale ease 0.1s;
+		}
+		.content-img:hover{
+			scale: 110%;
+			cursor: pointer;
+		}
+		.content-product{
+			background-color: #003366;
+			text-align: center;
+			color: white;
+		}
+		.content-cost-new{
+			color: red ;
+		}
+		.content-cost-old{
+			text-decoration: line-through;
+		}
+		.star-icon{
+			font-size: 10px;
+			color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="" class="logo-link">
+				<img src="./logoTX1.png" alt="" class="logo-img">
+			</a>
+		</div>
+		<div class="search">
+			<input type="search" name="" placeholder="Search" class="search-input">
+			<select class="search-categories">
+				<option value="Categories">Categories</option>
+				<option value="">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+			<div class="search-btn"></div>
+		</div>
+		<div class="search-lock">
+			
+			<p><i class="fa-solid fa-lock"></i>
+				0 Item(S) - $0.00</p>
+		</div>
+		
+	</div>
+	
+	<div class="menu">
+		<ul class="menu-list">
+			<li class="menu-item">
+				
+				<a href="" class="menu-item-link"><i class=" home-icon fa-solid fa-house-user"></i><span> Home</span></a>
+			</li>
+			<li class="menu-item"><a href="" class="menu-item-link">Women</a></li>
+			<li class="menu-item child">
+				<a href="" class="menu-item-link">Men</a>
+				<ul class="menu-list-2">
+					<li class="menu-item-2"><a href="" class="menu-item-link-2">Clothing(0)</a></li>
+					<li class="menu-item-2"><a href="" class="menu-item-link-2"></a>@  Couts(0)</li>
+					<li class="menu-item-2"><a href="" class="menu-item-link-2"></a>@  T-Shirts(0)</li>
+					<li class="menu-item-2"><a href="" class="menu-item-link-2"></a>@  Tennis(0)</li>
+				</ul>
+			</li>
+			<li class="menu-item"><a href="" class="menu-item-link">Jewelry</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link">Books</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link">Clothing</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link">Jeans</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link">Accessories</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link">Blog</a></li>
+			<li class="menu-item"><a href="" class="menu-item-link farr">The Girl Racing Biicycle</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="content-item">
+			<div class="content-img">
+				<img src="./assets/img/my_pham.png" alt="">
+			</div>
+			
+			<div class="content-product">
+				<div class="content-product-name">Apple Cinema 30</div>
+				<div class="content-star">
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+				</div>
+				<span class="content-cost-new">$110.00 </span>
+				<span class="content-cost-old">$122.00</span>
+			</div>
+		</div>
+		
+		<div class="content-item">
+			<div class="content-img">
+				<img src="./assets/img/my_pham.png" alt="">
+			</div>
+			
+			<div class="content-product">
+				<div class="content-product-name">Apple Cinema 30</div>
+				<div class="content-star">
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+				</div>
+				<span class="content-cost-new">$110.00 </span>
+				<span class="content-cost-old">$122.00</span>
+			</div>
+		</div>
+		
+		<div class="content-item">
+			<div class="content-img">
+				<img src="./assets/img/my_pham.png" alt="">
+			</div>
+			
+			<div class="content-product">
+				<div class="content-product-name">Apple Cinema 30</div>
+				<div class="content-star">
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+					<i class="star-icon fa-solid fa-star"></i>
+				</div>
+				<span class="content-cost-new">$110.00 </span>
+				<span class="content-cost-old">$122.00</span>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

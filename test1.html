@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="./assets/font/fontawesome-free-6.2.1-web/css/all.min.css">
+	<style>
+		*{
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+		}
+		body{
+			margin: 0;
+			padding: 0 ;
+		}
+		.header{
+			height: 106px;
+		}
+		.header-with-search{
+			height: 68px;
+/*			background-color: red;*/
+			padding: 0 272px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.search-background-image{
+			width: 132px;
+			height: 100%;
+			background-image: url(https://baomoi-static.bmcdn.me/web-v2/prod/v0.3.37/public/images/default-skin/bm-logo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.search-background-link{
+			
+		}
+		.search-box{
+			
+		}
+		.search-input{
+			margin-top: 14px;
+			width: 500px;
+			height: 30px;
+			border: 1px solid #e9ecef;
+			outline: none;
+		}
+		.search-input:hover{
+			outline:1px solid #9bd9e3;
+		}
+		.haeder-navbar{
+			height:38px; 
+			background-color: yellow;
+		}
+		.search-icon{
+
+			line-height: 68px;
+		}
+		.search-icon-user{
+			margin-right: 5px;
+		}
+		.navbar-list{
+			display: flex;
+			padding: 0 275px;
+			justify-content: space-between;
+			height: 100%;
+			list-style: none;
+			background-color: #2fa1b3;
+		}
+		.navbar-item{
+			height: 100%;
+			width: 25%;
+			text-align: center;
+			border-left: 1px solid #55a9b7;
+			border-right: 1px solid #55a9b7;
+			
+		}
+		.navbar-item:hover{
+			background-color: #2b94a5;
+		}
+		.navbar-item.special{
+			position: relative;
+		}
+		.navbar-item.special:hover .navbar-list-2{
+			display: block;
+		}
+		.navbar-link{
+			text-decoration: none;
+			line-height: 38px;
+			color: white;
+		}
+		.navbar-list-2{
+			list-style: none;
+			width: 116%;
+			display: none;
+			position: absolute;
+			left: -40px;
+			
+		}
+		.navbar-item-2{
+			height: 38px;
+			background-color: #2fa1b3;
+			line-height: 38px;
+			border-top: 1px solid #55a9b7;
+		}
+		.navbar-item-2:hover{
+			background-color:#2b94a5;
+			cursor: pointer;
+		}
+		.navbar-link-2{
+			text-decoration: none;
+			color: white;
+		}
+		.content{
+			margin: 16px 275px 0 275px;
+			height: 400px;
+			display: flex;
+		}
+		.content-current{
+			width: 60%;
+			height: 100%;
+			padding-top: 14px;
+		}
+		.content-current h1{
+			margin: 0;
+			font-size: 26px;
+			margin-top: 8px;
+		}
+		.content-current-img{
+			border-radius: 3px;
+			width: 99%;
+		}
+		.content-hot{
+			width: 40%;
+			height: 100%;
+		}
+		.content-hot-item{
+			height: 20%;
+			width: 382px;
+			margin-top: 18px;
+			margin-left: 6px;
+			border-bottom: 1px solid #e9ecef;
+			display: flex;
+		}
+		.content-hot-item h3{
+			margin: 0 0 0 14px;
+			font-size: 18px;
+		}
+		.item-img{
+			width: 60px;
+			height: 60px;
+			border-radius: 3px;
+		}
+		.item-icon-source{
+			width: 44px;
+			margin-left: 14px;
+			margin-top: 6px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header-with-search">
+			
+			<div class="search-background-image">
+				<a href="" class="search-background-link" ></a>
+			</div>
+			
+			<div class="search-box">
+				<input type="text" name="" id="" class="search-input" placeholder="Nhập nội dung tìm kiếm">
+			</div>
+			<div class="search-icon">
+				<i class="search-icon-user fa-regular fa-user"></i>
+				<i class="search-icon-phone fa-solid fa-phone"></i>
+			</div>
+		</div>
+		
+		<div class="haeder-navbar">
+			<ul class="navbar-list">
+				<li class="navbar-item"><a href="" class="navbar-link">NÓNG</a></li>
+				<li class="navbar-item"><a href="" class="navbar-link">MỚI</a></li>
+				<li class="navbar-item"><a href="" class="navbar-link">VIDEO</a></li>
+				<li class="navbar-item special">
+					
+					<a href="" class="navbar-link">CHỦ ĐỀ</a>
+					<ul class="navbar-list-2">
+						<li class="navbar-item-2"><a href="" class="navbar-link-2">BÓNG ĐÁ</a></li>
+						<li class="navbar-item-2"><a href="" class="navbar-link-2">CHÍNH TRỊ</a></li>
+						<li class="navbar-item-2"><a href="" class="navbar-link-2">KINH TẾ</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content-current">
+			<img src="https://photo-baomoi.bmcdn.me/w700_r16x9_sm/2022_12_26_30_44652631/dec1a864b4295d770438.jpg" alt="" class="content-current-img">
+			<h1>Bị HLV Malaysia 'nắn gân', thầy Park phản ứng bất ngờ</h1>
+		</div>
+		
+		<div class="content-hot">
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+			
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+			
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+			
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+			
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+			
+			<div class="content-hot-item">
+					<img src="https://photo-baomoi.bmcdn.me/w300_r1x1/2022_06_30_23_43036670/e1fe2316c4542d0a7445.jpg" alt="" class="item-img">
+				<div class="item-info">
+					<h3>Tổng Bí thư: 'Không được cậy có quyền, uốn thẳng thành cong'</h3>
+					<img src="https://photo-baomoi.bmcdn.me/26dc73b3aef047ae1ee1.png" alt="" class="item-icon-source">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

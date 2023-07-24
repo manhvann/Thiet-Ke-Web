@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script>
+		function KiemTra(){
+			var t=document.nhap.ten.value;
+			var m=document.nhap.mk.value;
+			if(t=="" || m=="") alert("Mời bạn nhập");
+			var reg1=/^[0-9]/;
+			var reg2=/[A-Z]/;
+			var reg3=/[0-9]/;
+			var kt=true;
+			if(reg1.test(t)) kt=false;
+			if(!reg2.test(m) || !reg3.test(m)) kt=false;
+			if(kt) alert("Bạn nhập đúng");
+			else alert("Bạn nhập sai");
+		}
+	</script>
+</head>
+
+<body>
+	<form action="" name="nhap">
+		<table width="200" border="1">
+  <tbody>
+    <tr>
+      <td>username</td>
+      <td><input type="text" name="ten" id=""></td>
+    </tr>
+    <tr>
+      <td>password</td>
+      <td><input type="password" name="mk" id=""></td>
+    </tr>
+    <tr>
+      <td><input type="button" name="" id="" onClick="KiemTra();" value="Kiem tra"></td>
+    </tr>
+  </tbody>
+</table>
+
+	</form>
+</body>
+</html>
